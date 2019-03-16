@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pari</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link rel="shortcut icon" href="icon.ico" />
+    </head>
+</head>
+<body style="background-image:url(./bg.jpg)">
+    <div class="navbar-fixed">
+    <nav style="background-color:#f15652">
+        <div class="nav-wrapper container">
+            <a href="./index.html" class="brand-logo" id="logo" style="font-family:samarkhan; font-weight: 400; font-size: 45px;">Pari</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a style="font-size:18px;font-family: 'IBM Plex Sans', sans-serif;" href="/Projects/Pari/index.html#about">About Us</a></li>
+                <li><a style="font-size:18px;font-family: 'IBM Plex Sans', sans-serif;" href="./donation.html">Donate</a></li>
+                <li><a style="font-size:18px;font-family: 'IBM Plex Sans', sans-serif;" href="#">Request Relief</a></li>
+                <li><a style="font-size:18px;font-family: 'IBM Plex Sans', sans-serif;" href="./contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+    <div>
+        <h2 style="font-family: Roboto; text-align:center;">Request Relief</h2>
+    </div>
+    <div class="container">
+        <div style="border:2px solid tomato;height:40px;border-radius:20px ;max-width: fit-content;margin-left: 24px;">
+            <div style="float:left;padding-left: 20px;padding-right:20px; "><div><i class="fas fa-map-marker-alt" style="font-size:20px;padding-top:10px;"></i></div></div><span id="demo" style="padding-right:10px;font-size:20px;padding-top:10px;"></span>
+        </div>
+
+        <div style="margin-left: 24px;padding-top:30px;">
+            <div class="select" tabindex="1">
+                <input class="selectopt" name="test" type="radio" id="opt1" checked>
+                <label for="opt1" class="option"><img src="./flood.png" style="padding-right:10px;">Chennai Floods</label>
+                <input class="selectopt" name="test" type="radio" id="opt2">
+                <label for="opt2" class="option"><img src="./flood.png" style="padding-right:10px;">Kerala Floods</label>
+                <input class="selectopt" name="test" type="radio" id="opt3">
+                <label for="opt3" class="option"><img src="./earthquake.png" style="padding-right:10px;">Assam Earthquakes</label>
+                <input class="selectopt" name="test" type="radio" id="opt4">
+                <label for="opt4" class="option"><img src="./landslide.png" style="padding-right:10px;">Uttarkhand Landslides</label>
+                <input class="selectopt" name="test" type="radio" id="opt5">
+                <label for="opt5" class="option"><img src="./storm.png" style="padding-right:10px;">Cyclone Titli</label>
+            </div>
+        </div>
+        
+        <div style="padding-top:40px;">
+            <ul class="collapsible popout" data-collapsible="expandable">
+                <li>
+                    <div class="collapsible-header"><i class="fas fa-utensils"></i>Food</div>
+                    <div class="collapsible-body">
+                        <a class="btn btn-large utils" id="milk" style="border-radius:40px;padding-right: 10px;margin-right: 5px;"><span style="font-size:15px;">Milk</span><i id="milktick" class="fas " style="padding-left:10px;padding-right:5px;font-size:20px;"></i></a>
+                        <a class="btn btn-large utils" id="biscuits" style="border-radius:40px;padding-right: 10px;margin-right: 5px;"><span style="font-size:15px;">Biscuits</span><i id="bisctick" class="fas " style="padding-left:10px;padding-right:5px;font-size:20px;"></i></a>
+                        <a class="btn btn-large utils" id="bread" style="border-radius:40px;padding-right: 10px;margin-right: 5px;"><span style="font-size:15px;">Bread</span><i id="breadtick" class="fas " style="padding-left:10px;padding-right:5px;font-size:20px;"></i></a>
+                        <a class="btn btn-large utils" id="starch" style="border-radius:40px;padding-right: 10px;margin-right: 5px;"><span style="font-size:15px;">Rice Starch</span><i id="starchtick" class="fas " style="padding-left:10px;padding-right:5px;font-size:20px;"></i></a>
+                        <a class="btn btn-large utils" id="water" style="border-radius:40px;padding-right: 10px;margin-right: 5px;"><span style="font-size:15px;">Water</span><i id="watertick" class="fas " style="padding-left:10px;padding-right:5px;font-size:20px;"></i></a>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="fas fa-notes-medical"></i>Medicines</div>
+                    <div class="collapsible-body">
+                        <a  class="btn btn-large utils" id="fever" style="border-radius:40px;padding-right: 10px;margin-right: 5px;"><span style="font-size:15px;">Fever</span><i id="fev" class="fas " style="padding-left:10px;padding-right:5px;font-size:20px;"></i></a>
+                        <a  class="btn btn-large utils" id="cold" style="border-radius:40px;padding-right: 10px;margin-right: 5px;"><span style="font-size:15px;">Common Cold</span><i id="com" class="fas " style="padding-left:10px;padding-right:5px;font-size:20px;"></i></a>
+                        <a  class="btn btn-large utils" id="motions" style="border-radius:40px;padding-right: 10px;margin-right: 5px;"><span style="font-size:15px;">Diarhoea</span><i id="mot" class="fas " style="padding-left:10px;padding-right:5px;font-size:20px;"></i></a>
+                        <a  class="btn btn-large utils" id="injuries" style="border-radius:40px;padding-right: 10px;margin-right: 5px;"><span style="font-size:15px;">Wounds</span><i id="cut" class="fas " style="padding-left:10px;padding-right:5px;font-size:20px;"></i></a>
+                        <a  class="btn btn-large utils" id="insect" style="border-radius:40px;padding-right: 10px;margin-right: 5px;"><span style="font-size:15px;">Insect/Snake Bites</span><i id="bite" class="fas " style="padding-left:10px;padding-right:5px;font-size:20px;"></i></a>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="fas fa-bed"></i>Daily Needs</div>
+                    <div class="collapsible-body">
+                        <a  class="btn btn-large utils" id="bedsheets" style="border-radius:40px;padding-right: 10px;margin-right: 5px;"><span style="font-size:15px;">Bedsheets</span><i id="bed" class="fas " style="padding-left:10px;padding-right:5px;font-size:20px;"></i></a>
+                        <a  class="btn btn-large utils" id="toiletry" style="border-radius:40px;padding-right: 10px;margin-right: 5px;"><span style="font-size:15px;">Toiletry</span><i id="toil" class="fas " style="padding-left:10px;padding-right:5px;font-size:20px;"></i></a>
+                        <a  class="btn btn-large utils" id="towels" style="border-radius:40px;padding-right: 10px;margin-right: 5px;"><span style="font-size:15px;">Towels</span><i id="tow" class="fas " style="padding-left:10px;padding-right:5px;font-size:20px;"></i></a>
+                        <a  class="btn btn-large utils" id="raincoats" style="border-radius:40px;padding-right: 10px;margin-right: 5px;"><span style="font-size:15px;">Raincoats</span><i id="rain" class="fas " style="padding-left:10px;padding-right:5px;font-size:20px;"></i></a>
+                        <a  class="btn btn-large utils" id="sanitary" style="border-radius:40px;padding-right: 10px;margin-right: 5px;"><span style="font-size:15px;">Sanitary Pads</span><i id="pads" class="fas " style="padding-left:10px;padding-right:5px;font-size:20px;"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="fas fa-phone"></i>24x7 Assistance</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+            </ul>
+        </div>
+        
+        <div style="text-align:center;padding:20px;">
+            <a href="#" class="btn btn-large know" style="text-align:center;border-radius:40px;">Request</a>
+        </div>
+    </div>
+
+    <footer class="blue-grey darken-4" style="height:100px;color: white;margin-top: 40px;">
+        <div class="container">
+            <div class="row" style="margin-bottom:0px;">
+                <div class="col s6" style="float:left;margin:20px auto;">
+                    <h5>
+                        Made with <span class="fas fa-heart" id="love"></span> by Team Codemons
+                    </h5>
+                </div>
+                <div class="col s6" style="float:right;">
+                    <div style="padding: 0;margin: 20px auto;position: relative;float: none;list-style: none;text-align: right;">
+                        <ul>
+                            <li class="socialhover" style="display:inline-block;margin: 0 3px; ">
+                                <a href="http://facebook.com/amilneni/" class="socialhover valign-wrapper" style="border-radius: 50%;width: 60px;height: 60px;text-align: center;display: block;padding: 8px;font-size: 25px;background-color: blue-grey darken-4">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="socialhover" style="display:inline-block;margin: 0 3px; ">
+                                <a href="http://facebook.com/amilneni/" class="socialhover valign-wrapper" style="border-radius: 50%;width: 60px;height: 60px;text-align: center;display: block;padding: 8px;font-size: 25px;background-color: blue-grey darken-4">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li class="socialhover" style="display:inline-block;margin: 0 3px;">
+                                <a href="http://github.com/amilaneni99/" class="socialhover valign-wrapper" style="border-radius: 50%;width: 60px;height: 60px;text-align: center;display: block;padding: 8px;font-size: 25px;background-color: blue-grey darken-4">
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                            </li>
+                            <li class="socialhover" style="display:inline-block;margin: 0 3px;">
+                                <a href="http://instagram.com/amilaneni_abhinav/" class="socialhover valign-wrapper" style="border-radius: 50%;width: 60px;height: 60px;text-align: center;display: block;padding: 8px;font-size:25px;background-color: blue-grey darken-4">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8prVLrbZbsslws1be3YzHku7HBSvAZfA&callback=myMap"></script>
+    <script src="./request.js"></script>
+</body>
+</html>

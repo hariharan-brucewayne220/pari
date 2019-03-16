@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <script>
+        {
+            var places = ["Abohar", "Achalpur", "Adilabad", "Adityapur", "Adoni", "Agartala", "Agra"];
+            var relief = ["Bedsheets", "Milk", "First Aid Kits", "Sanitary Pads"];
+            var input = "Milk and Bedsheets required at Abohar"
+            var input_array = input.split(" ");
+            console.log(input_array);
+            var relief_array = [];
+            for (i in relief) {
+                if (i in input_array) {
+                    console.log(i);
+                }
+            }
+            console.log(relief_array);
+
+            for(j in places){
+                if(j in input_array){
+                    relief_array.push(j);
+                }
+            }
+            console.log(relief_array);
+        }
+    </script>
+</body>
+</html>

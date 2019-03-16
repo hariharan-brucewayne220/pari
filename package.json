@@ -1,0 +1,22 @@
+{
+  "name": "pari",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "consolidate": "^0.15.1",
+    "express": "^4.16.4",
+    "live-server": "^1.2.0",
+    "mongoose": "^5.3.7",
+    "mustache": "^3.0.0",
+    "nodemon": "^1.18.5",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
